@@ -1,4 +1,8 @@
+
+
 <form>
+        <link rel="stylesheet" href="./style.css">
+
     <h1><bold>Contato</bold></h1>
     <label for="">Nome:</label><br>
 <input type="text"><br>
@@ -10,27 +14,6 @@
 <input name="mybuttons" type="radio" value="1" /> Masculino<br />
 <input name="mybuttons" type="radio" value="2" /> Feminino<br />
 <input name="mybuttons" type="radio" value="3" /> Prefiro não dizer<br /><br />
-<input type="submit">
-<button><a href="./index.html">Voltar</a></button>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-
-        var form = document.getElementById("myForm");
-
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            var nome = document.getElementById("nome").value;
-            var sobrenome = document.getElementById("sobrenome").value;
-            var email = document.getElementById("email").value;
-            var sexo = document.querySelector('input[name="mybuttons"]:checked').value;
-
-            console.log("Nome: " + nome);
-            console.log("Sobrenome: " + sobrenome);
-            console.log("Email: " + email);
-            console.log("Sexo: " + sexo);
-        });
-    });
-</script>
+<input type="submit" id="Submit69" class="btn btn-default btn-block" style="background-color: #cea1f3"><br><br>
+<button style="background-color:#cea1f3;"><a href="./index.html">Voltar</a></button>
 </form>
