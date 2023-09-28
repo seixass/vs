@@ -1,0 +1,36 @@
+<form>
+    <h1><bold>Contato</bold></h1>
+    <label for="">Nome:</label><br>
+<input type="text"><br>
+    <label for=""> Sobrenome: </label><br>
+<input type="text"><br>
+    <label for="">Email:</label><br>
+<input type="email" placeholder="digite@seuemail.com"><br><br>
+    <label for="">Sexo:</label><br>
+<input name="mybuttons" type="radio" value="1" /> Masculino<br />
+<input name="mybuttons" type="radio" value="2" /> Feminino<br />
+<input name="mybuttons" type="radio" value="3" /> Prefiro não dizer<br /><br />
+<input type="submit">
+<button><a href="./index.html">Voltar</a></button>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        var form = document.getElementById("myForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var nome = document.getElementById("nome").value;
+            var sobrenome = document.getElementById("sobrenome").value;
+            var email = document.getElementById("email").value;
+            var sexo = document.querySelector('input[name="mybuttons"]:checked').value;
+
+            console.log("Nome: " + nome);
+            console.log("Sobrenome: " + sobrenome);
+            console.log("Email: " + email);
+            console.log("Sexo: " + sexo);
+        });
+    });
+</script>
+</form>
